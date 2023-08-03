@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*=======header=======*/
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  box-shadow: 0px 5px 20px rgb(119, 116, 116);
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 30%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+  background: #23232e;
+  height: 8vh;
+  
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  width: 100%;
+  height: 25%;
+  transition: .4s;
+  
+}
+/*=====vazio=====*/
+.vazio{
+  height: 11vh;
+  width: 100%;
+}
+/*=====main=====*/
+.main{
+  height: 100vh;
+  width: 80vw;
+}
+
+/*======= MENU HAMBURGUER =======*/
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 500px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    
+    .mobile-menu {
+      display: block;
+    }
+  }
+
+  /*=====Carrossel=====*/
+  
+.carrossel-container {
+    position: relative;
+    min-height: 15em;
+    height: 20%;
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carrossel-cabecalho {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .prev-Item,
+  .next-Item {
+    height: 2em;
+    width: 2em;
+    border: solid 2px lightgray;
+    border-radius: 1.5em;
+    color: dodgerblue;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .prevItem.disabled,
+  .nextItem.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .carrossel-visivel{
+    height: 80%;
+  }
+  .carousel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: transform .4s ease-in-out;
+  }
+  
+  .carousel-item {/* Defina a largura do item do carrossel aqui */
+    flex: 0 0 20%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .categoria-img {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .categoria-img div{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-color: rgb(184, 199, 199);
+  }
+  .categoria-descricao{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(41, 41, 41);
+  }
+
+  /*=====CARDS=====*/
+  .container-cards{
+    height: 1200px;
+    width: 100%;
+  }
+  .div-cards{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards{
+    width: 200px;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .cards:hover{
+    box-shadow:  0px 0px 20px rgb(196, 194, 194);
+    transition: .7s;
+  }
+  img{
+    height: 50%;
+    border-radius: 10px;
+  }
+  img:hover{
+    border-radius: 0;
+    transition: 1s;
+  }
+  p{
+    height: 90px;
+    margin: 10px ;
+    font-size:11px;
+  }
+  .div-botao{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    background-color: #0f8e35;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    border: none;
+  }
+  button:hover{
+    transition: 1s;
+    background-color: rgb(37, 193, 94);
+  }
+  
