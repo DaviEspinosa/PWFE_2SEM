@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(212, 210, 210);
 }
 /*=======header=======*/
 header{
@@ -14,7 +15,7 @@ header{
   width: 100%;
   position: fixed;
   z-index: 9;
-  box-shadow: 0px 5px 20px rgb(119, 116, 116);
+  box-shadow: 0px 2px 10px rgb(97, 92, 92);
 }
 a {
   color: #fff;
@@ -204,72 +205,111 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(41, 41, 41);
+    color: rgb(216, 204, 204);
   }
 
-  /*=====CARDS=====*/
-  .container-cards{
-    height: 1200px;
-    width: 100%;
-  }
-  .div-cards{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .cards{
-    
-    width: 200px;
-    height: 80%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(237, 237, 237);
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .cards:hover{
-    box-shadow:  0px 0px 20px rgb(196, 194, 194);
-    transition: .7s;
-  }
-  img{
-    height: 50%;
-    border-radius: 10px;
-  }
-  img:hover{
-    border-radius: 0;
-    transition: 1s;
-  }
-  p{
-    height: 90px;
-    margin: 10px ;
-    font-size:11px;
-  }
-  .div-botao{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  button{
-    background-color: #0f8e35;
-    color: aliceblue;
-    border-radius: 5px;
-    height: 30px;
-    width: 60px;
-    border: none;
-  }
-  button:hover{
-    transition: 1s;
-    background-color: rgb(37, 193, 94);
-  }
+/*=====Anuncios=====*/
+.container-anuncios{
+  width: 100%;
+  height: 400px;
+  background-color:  #646363;
+  display: flex;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: .7s;
+}
+.container-anuncios2{
+  width: 100%;
+  height: 400px;
+  background-color:  #646262;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: .7s;
+}
+.container-anuncios:hover , .container-anuncios2:hover{
+  box-shadow:  0px 0px 20px rgb(82, 81, 81);
+  background-color: rgb(56, 85, 114);
+  color: #000000;
+  transition: .7s;
+}
+
+.anuncio{
+  height: 100%;
+  width: 50%;
+  
+}
+.img-anuncio{
+  height: 100%;
+  width: 100%;
+  
+}
+.legenda{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+  
   /*======FOOTER======*/
   footer{
-    height: 300px;
+    height: 250px;
     width: 100%;
     bottom: 0;
     position: relative;
-    background-color: blueviolet;
+    background: #23232e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+  }
+  .footer-container{
+    height: 90%;
+    width: 80%;
+    background: #23232e;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ul-footer{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .li-footer{
+    margin-bottom: 10px;
+  }
+  /*=====REDES SOCIAIS=====*/
+   .ul-footer2{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 70%;
+    height: 80%;
+  }
+  i{
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .5s;
+  }
+  i:hover{
+    background-color: dodgerblue;
   }
