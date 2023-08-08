@@ -1,0 +1,70 @@
+/*=====vazio=====*/
+.vazio2{
+    height: 15vh;
+    width: 100%;
+  }
+/*=====main=====*/
+.main{
+     width: 80vw;
+}
+
+/*=====CARDS=====*/
+.container-cards{
+    height: 1200px;
+    width: 100%;
+  }
+  .div-cards{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards{
+    
+    width: 200px;
+    height: 80%;
+    background-color: rgb(212, 210, 210);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #363535;
+    
+  }
+  .cards:hover{
+    box-shadow:  0px 0px 20px rgb(141, 134, 134);
+    transition: .7s;
+    color: #000000;
+    
+  }
+  img{
+    height: 50%;
+    border-radius: 10px;
+  }
+  img:hover{
+    border-radius: 0;
+    transition: 1s;
+  }
+  p{
+    height: 90px;
+    margin: 10px ;
+    font-size:11px;
+  }
+  .div-botao{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    background-color: #0f8e35;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    border: none;
+  }
+  button:hover{
+    transition: 1s;
+    background-color: rgb(37, 193, 94);
+  }
